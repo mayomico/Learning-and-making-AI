@@ -6,7 +6,7 @@ a=np.array([1,3,4,5])
 d=np.array([
     [1, 2, 3],
     [4, 5, 6],
-    [7, 8, 9]
+    [7, 8, 10]
 ])
 print("Two dimension:\n",d)
 #np.array can define a array in any dimensions
@@ -25,7 +25,7 @@ print("ones matrix:\n",one)
 arange=np.arange(1,100,5,int)
 print("arange matrix:\n",arange)
 #np.linspace is always stronger than np.arange because you just need set a start and a stop,system can get its gap automatically
-linspace=np.linspace(1,13,23,True,False,float)
+linspace=np.linspace(1,13,23,True,False,float)#"True" means it include the last one."False" means it doesn't tell you the value of the gap.
 print("linspace matrix:\n",linspace)
 print("----------get information----------")
 #they successfully define array in one and two dimension.Sure,you can define every dimension if you want to.
@@ -50,3 +50,6 @@ print("sum\n",np.sum(d))
 print("max\n",np.max(d))
 print("min\n",np.min(d))
 print("mean\n",np.mean(d))
+print("det\n",np.linalg.det(d))#linalg means "linear algcbra"
+print("inv\n",np.linalg.inv(d))#inv means "inverse"
+print("rank\n",np.linalg.matrix_rank(d))
