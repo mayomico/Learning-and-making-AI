@@ -27,6 +27,8 @@ print("arange matrix:\n",arange)
 #np.linspace is always stronger than np.arange because you just need set a start and a stop,system can get its gap automatically
 linspace=np.linspace(1,13,23,True,False,float)#"True" means it include the last one."False" means it doesn't tell you the value of the gap.
 print("linspace matrix:\n",linspace)
+#if you want to create a totally random matrix,you can try this
+print("random:\n",np.random.rand(3,4))
 print("----------get information----------")
 #they successfully define array in one and two dimension.Sure,you can define every dimension if you want to.
 print("a size",a.size)#show how many elements in the array
